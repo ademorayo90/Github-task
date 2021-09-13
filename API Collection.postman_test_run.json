@@ -1,0 +1,361 @@
+{
+	"id": "09a12318-525f-45dd-9957-1bc34d3d8182",
+	"name": "API Collection",
+	"timestamp": "2021-09-13T11:30:28.085Z",
+	"collection_id": "17230659-1ad380af-c351-44e1-93d7-6af4670498a3",
+	"folder_id": 0,
+	"environment_id": "063a473f-7f4d-4da8-9272-bd981c9981d6",
+	"totalPass": 13,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "32c8ea5f-6645-44dc-9ab6-f7322a2e2179",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 836,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				836
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has OK string": true
+				}
+			]
+		},
+		{
+			"id": "58eba594-f49d-404b-a3a4-86a8d1333cf3",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/index.php/",
+			"time": 208,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code should have a name string OK": true,
+				"confirm that title is Fusio": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have a name string OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that title is Fusio": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				208
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code should have a name string OK": true,
+					"confirm that title is Fusio": true
+				}
+			]
+		},
+		{
+			"id": "bad1400f-b5f9-40fc-8f5e-b8eed1e5302f",
+			"name": "Get entry per ID - Valid ID",
+			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=11",
+			"time": 214,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				214
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true
+				}
+			]
+		},
+		{
+			"id": "0a738fc3-c7f3-4044-bd57-85eab7659305",
+			"name": "Get Books - valid book type",
+			"url": "https://simple-books-api.glitch.me/books?type=fiction",
+			"time": 1072,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Search for a book name called Viscount Who Loved Me": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search for a book name called Viscount Who Loved Me": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1072
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Search for a book name called Viscount Who Loved Me": true
+				}
+			]
+		},
+		{
+			"id": "06246e8a-9848-4677-bc21-649b44284638",
+			"name": "Get Books - invalid book type",
+			"url": "https://simple-books-api.glitch.me/books?type=&orderId",
+			"time": 450,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Search for a book name called Viscount Who Loved Me": false,
+				"The id number of a fiction book that available with the name The Midnight Library is ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search for a book name called Viscount Who Loved Me": {
+					"pass": 0,
+					"fail": 1
+				},
+				"The id number of a fiction book that available with the name The Midnight Library is ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				450
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Search for a book name called Viscount Who Loved Me": false,
+					"The id number of a fiction book that available with the name The Midnight Library is ": true
+				}
+			]
+		},
+		{
+			"id": "bc571c61-11b8-403b-b9e3-30d7357a980e",
+			"name": "Get all orders",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 1648,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1648
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e25a75f3-85d9-4d47-9a37-32657d285b2f",
+			"name": "Get an order - using a valid order number",
+			"url": "https://simple-books-api.glitch.me/orders/1B2MxfZFLWpatDgkkN6l3",
+			"time": 323,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				323
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5e2afdd6-a900-4825-8bca-7db377a69a4c",
+			"name": "Get an order - using no order ID",
+			"url": "https://simple-books-api.glitch.me/orders/",
+			"time": 4030,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4030
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cdb57b91-f3f1-4aa4-9372-9d7e36a881bd",
+			"name": "Delete an order - using valid order ID",
+			"url": "https://simple-books-api.glitch.me/orders/0SypfjGivHr3k0on21LmS",
+			"time": 1732,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 204": false,
+				"Status code name has string OK": false
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code name has string OK": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1732
+			],
+			"allTests": [
+				{
+					"Status code is 204": false,
+					"Status code name has string OK": false
+				}
+			]
+		},
+		{
+			"id": "7f616322-9059-4e39-9e74-e222dd07cf04",
+			"name": "Delete an order - using invalid order ID",
+			"url": "https://simple-books-api.glitch.me/orders/adeyi",
+			"time": 841,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				841
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 11354,
+	"collection": {
+		"requests": [
+			{
+				"id": "32c8ea5f-6645-44dc-9ab6-f7322a2e2179",
+				"method": "GET"
+			},
+			{
+				"id": "58eba594-f49d-404b-a3a4-86a8d1333cf3",
+				"method": "GET"
+			},
+			{
+				"id": "bad1400f-b5f9-40fc-8f5e-b8eed1e5302f",
+				"method": "GET"
+			},
+			{
+				"id": "0a738fc3-c7f3-4044-bd57-85eab7659305",
+				"method": "GET"
+			},
+			{
+				"id": "06246e8a-9848-4677-bc21-649b44284638",
+				"method": "GET"
+			},
+			{
+				"id": "bc571c61-11b8-403b-b9e3-30d7357a980e",
+				"method": "GET"
+			},
+			{
+				"id": "e25a75f3-85d9-4d47-9a37-32657d285b2f",
+				"method": "GET"
+			},
+			{
+				"id": "5e2afdd6-a900-4825-8bca-7db377a69a4c",
+				"method": "GET"
+			},
+			{
+				"id": "cdb57b91-f3f1-4aa4-9372-9d7e36a881bd",
+				"method": "DELETE"
+			},
+			{
+				"id": "7f616322-9059-4e39-9e74-e222dd07cf04",
+				"method": "DELETE"
+			}
+		]
+	}
+}
